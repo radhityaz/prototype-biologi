@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biologi × Teknik Industri</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="main-title">Biologi × Teknik Industri</h1>
+            <p class="subtitle">emang ada ya relevansinya?</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h2 class="big-heading">ADA DONG!!</h2>
+            <p class="blink-text">Lihat Selengkapnya ↓</p>
+
+            <!-- Carousel Section -->
+            <section class="carousel-section">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Card 1: Makromolekul -->
+                        <div class="card" data-page="makromolekul">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 100 100" class="icon">
+                                    <!-- Protein structure representation -->
+                                    <defs>
+                                        <linearGradient id="proteinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#3F64A9;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#4D7072;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Alpha helix structure -->
+                                    <path d="M15 50 Q25 30 35 50 Q45 70 55 50 Q65 30 75 50 Q85 70 95 50" stroke="url(#proteinGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+                                    <!-- Amino acid residues -->
+                                    <circle cx="25" cy="40" r="6" fill="#E6D590" stroke="#1B3A69" stroke-width="1.5"/>
+                                    <circle cx="45" cy="60" r="6" fill="#3F64A9" stroke="#1B3A69" stroke-width="1.5"/>
+                                    <circle cx="65" cy="40" r="6" fill="#4D7072" stroke="#1B3A69" stroke-width="1.5"/>
+                                    <circle cx="85" cy="60" r="6" fill="#E6D590" stroke="#1B3A69" stroke-width="1.5"/>
+                                    <!-- Side chains -->
+                                    <line x1="25" y1="34" x2="20" y2="25" stroke="#858E96" stroke-width="2" stroke-linecap="round"/>
+                                    <line x1="45" y1="66" x2="40" y2="75" stroke="#858E96" stroke-width="2" stroke-linecap="round"/>
+                                    <line x1="65" y1="34" x2="70" y2="25" stroke="#858E96" stroke-width="2" stroke-linecap="round"/>
+                                    <line x1="85" y1="66" x2="90" y2="75" stroke="#858E96" stroke-width="2" stroke-linecap="round"/>
+                                    <!-- Small atoms at chain ends -->
+                                    <circle cx="20" cy="25" r="2" fill="#1B3A69"/>
+                                    <circle cx="40" cy="75" r="2" fill="#1B3A69"/>
+                                    <circle cx="70" cy="25" r="2" fill="#1B3A69"/>
+                                    <circle cx="90" cy="75" r="2" fill="#1B3A69"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Makromolekul</h3>
+                            <button class="card-button">Lihat Selengkapnya</button>
+                        </div>
+
+                        <!-- Card 2: Genetika -->
+                        <div class="card" data-page="genetika">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 100 100" class="icon">
+                                    <!-- DNA Double Helix -->
+                                    <defs>
+                                        <linearGradient id="dnaGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#3F64A9;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#1B3A69;stop-opacity:1" />
+                                        </linearGradient>
+                                        <linearGradient id="dnaGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#4D7072;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#858E96;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Left strand -->
+                                    <path d="M25 15 Q35 25 25 35 Q15 45 25 55 Q35 65 25 75 Q15 85 25 95" stroke="url(#dnaGrad1)" stroke-width="4" fill="none" stroke-linecap="round"/>
+                                    <!-- Right strand -->
+                                    <path d="M75 15 Q65 25 75 35 Q85 45 75 55 Q65 65 75 75 Q85 85 75 95" stroke="url(#dnaGrad2)" stroke-width="4" fill="none" stroke-linecap="round"/>
+                                    <!-- Base pairs -->
+                                    <line x1="25" y1="25" x2="75" y2="25" stroke="#E6D590" stroke-width="3" stroke-linecap="round"/>
+                                    <line x1="25" y1="45" x2="75" y2="45" stroke="#E6D590" stroke-width="3" stroke-linecap="round"/>
+                                    <line x1="25" y1="65" x2="75" y2="65" stroke="#E6D590" stroke-width="3" stroke-linecap="round"/>
+                                    <line x1="25" y1="85" x2="75" y2="85" stroke="#E6D590" stroke-width="3" stroke-linecap="round"/>
+                                    <!-- Nucleotide bases -->
+                                    <circle cx="35" cy="25" r="3" fill="#1B3A69"/>
+                                    <circle cx="65" cy="25" r="3" fill="#4D7072"/>
+                                    <circle cx="35" cy="45" r="3" fill="#4D7072"/>
+                                    <circle cx="65" cy="45" r="3" fill="#1B3A69"/>
+                                    <circle cx="35" cy="65" r="3" fill="#1B3A69"/>
+                                    <circle cx="65" cy="65" r="3" fill="#4D7072"/>
+                                    <circle cx="35" cy="85" r="3" fill="#4D7072"/>
+                                    <circle cx="65" cy="85" r="3" fill="#1B3A69"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Genetika</h3>
+                            <button class="card-button">Lihat Selengkapnya</button>
+                        </div>
+
+                        <!-- Card 3: Sel & Organel -->
+                        <div class="card" data-page="sel-organel">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 100 100" class="icon">
+                                    <!-- Cell membrane -->
+                                    <circle cx="50" cy="50" r="40" stroke="#3F64A9" stroke-width="3" fill="rgba(63, 100, 169, 0.1)" stroke-dasharray="2,1"/>
+                                    <!-- Nucleus -->
+                                    <circle cx="45" cy="40" r="12" fill="#1B3A69" stroke="#3F64A9" stroke-width="2"/>
+                                    <circle cx="45" cy="40" r="8" fill="#4D7072" opacity="0.7"/>
+                                    <circle cx="47" cy="38" r="2" fill="#E6D590"/>
+                                    <!-- Mitochondria -->
+                                    <ellipse cx="65" cy="35" rx="10" ry="6" fill="#4D7072" stroke="#1B3A69" stroke-width="1.5"/>
+                                    <path d="M58 35 Q62 32 66 35 Q70 38 74 35" stroke="#E6D590" stroke-width="1.5" fill="none"/>
+                                    <path d="M58 35 Q62 38 66 35 Q70 32 74 35" stroke="#E6D590" stroke-width="1.5" fill="none"/>
+                                    <!-- Endoplasmic Reticulum -->
+                                    <path d="M25 60 Q30 55 35 60 Q40 65 45 60 Q50 55 55 60" stroke="#3F64A9" stroke-width="2" fill="none"/>
+                                    <path d="M25 65 Q30 60 35 65 Q40 70 45 65 Q50 60 55 65" stroke="#3F64A9" stroke-width="2" fill="none"/>
+                                    <!-- Ribosomes -->
+                                    <circle cx="28" cy="62" r="1.5" fill="#E6D590"/>
+                                    <circle cx="38" cy="62" r="1.5" fill="#E6D590"/>
+                                    <circle cx="48" cy="62" r="1.5" fill="#E6D590"/>
+                                    <!-- Golgi Apparatus -->
+                                    <path d="M70 55 Q75 50 80 55 Q75 60 70 55" stroke="#4D7072" stroke-width="2" fill="rgba(77, 112, 114, 0.3)"/>
+                                    <path d="M70 60 Q75 55 80 60 Q75 65 70 60" stroke="#4D7072" stroke-width="2" fill="rgba(77, 112, 114, 0.3)"/>
+                                    <path d="M70 65 Q75 60 80 65 Q75 70 70 65" stroke="#4D7072" stroke-width="2" fill="rgba(77, 112, 114, 0.3)"/>
+                                    <!-- Lysosomes -->
+                                    <circle cx="30" cy="75" r="4" fill="#E6D590" stroke="#1B3A69" stroke-width="1"/>
+                                    <circle cx="70" cy="75" r="4" fill="#E6D590" stroke="#1B3A69" stroke-width="1"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Sel & Organel</h3>
+                            <button class="card-button">Lihat Selengkapnya</button>
+                        </div>
+
+                        <!-- Card 4: Sistem Tubuh -->
+                        <div class="card" data-page="sistem-tubuh">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 100 100" class="icon">
+                                    <!-- Human body systems representation -->
+                                    <defs>
+                                        <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#3F64A9;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#1B3A69;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Head/Brain -->
+                                    <circle cx="50" cy="20" r="12" fill="url(#bodyGrad)" stroke="#1B3A69" stroke-width="1.5"/>
+                                    <path d="M45 18 Q50 15 55 18 Q50 22 45 18" fill="#E6D590" opacity="0.8"/>
+                                    <!-- Torso with organs -->
+                                    <ellipse cx="50" cy="50" rx="18" ry="25" fill="rgba(63, 100, 169, 0.2)" stroke="#3F64A9" stroke-width="2"/>
+                                    <!-- Heart -->
+                                    <path d="M42 40 Q40 35 45 38 Q50 35 55 38 Q60 35 58 40 Q50 50 42 40" fill="#E6D590" stroke="#1B3A69" stroke-width="1"/>
+                                    <!-- Lungs -->
+                                    <ellipse cx="40" cy="45" rx="6" ry="8" fill="#4D7072" opacity="0.7"/>
+                                    <ellipse cx="60" cy="45" rx="6" ry="8" fill="#4D7072" opacity="0.7"/>
+                                    <!-- Digestive system -->
+                                    <path d="M45 55 Q50 60 55 55 Q52 65 48 65 Q45 60 45 55" fill="#858E96" opacity="0.6"/>
+                                    <!-- Circulatory system (blood vessels) -->
+                                    <path d="M50 32 L50 40" stroke="#E6D590" stroke-width="2"/>
+                                    <path d="M50 50 Q45 55 40 60" stroke="#E6D590" stroke-width="1.5"/>
+                                    <path d="M50 50 Q55 55 60 60" stroke="#E6D590" stroke-width="1.5"/>
+                                    <path d="M50 65 L50 75" stroke="#E6D590" stroke-width="2"/>
+                                    <!-- Arms -->
+                                    <line x1="32" y1="45" x2="20" y2="55" stroke="#3F64A9" stroke-width="4" stroke-linecap="round"/>
+                                    <line x1="68" y1="45" x2="80" y2="55" stroke="#3F64A9" stroke-width="4" stroke-linecap="round"/>
+                                    <!-- Legs -->
+                                    <line x1="42" y1="75" x2="38" y2="90" stroke="#3F64A9" stroke-width="4" stroke-linecap="round"/>
+                                    <line x1="58" y1="75" x2="62" y2="90" stroke="#3F64A9" stroke-width="4" stroke-linecap="round"/>
+                                    <!-- Nervous system indicators -->
+                                    <circle cx="45" cy="25" r="1" fill="#E6D590"/>
+                                    <circle cx="55" cy="25" r="1" fill="#E6D590"/>
+                                    <circle cx="35" cy="50" r="1" fill="#E6D590"/>
+                                    <circle cx="65" cy="50" r="1" fill="#E6D590"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Sistem Tubuh</h3>
+                            <button class="card-button">Lihat Selengkapnya</button>
+                        </div>
+
+                        <!-- Card 5: Ekosistem & Biodiversitas -->
+                        <div class="card" data-page="ekosistem">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 100 100" class="icon">
+                                    <!-- Ecosystem representation -->
+                                    <defs>
+                                        <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#E6D590;stop-opacity:0.8" />
+                                            <stop offset="100%" style="stop-color:#3F64A9;stop-opacity:0.3" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Sky background -->
+                                    <rect x="0" y="0" width="100" height="60" fill="url(#skyGrad)"/>
+                                    <!-- Sun -->
+                                    <circle cx="80" cy="20" r="8" fill="#E6D590" stroke="#1B3A69" stroke-width="1"/>
+                                    <path d="M80 8 L80 4 M92 20 L96 20 M80 32 L80 36 M68 20 L64 20 M88 12 L91 9 M88 28 L91 31 M72 12 L69 9 M72 28 L69 31" stroke="#E6D590" stroke-width="1.5" stroke-linecap="round"/>
+                                    <!-- Mountains -->
+                                    <path d="M0 50 L20 30 L40 45 L60 25 L80 40 L100 35 L100 60 L0 60 Z" fill="#4D7072" opacity="0.7"/>
+                                    <!-- Trees (different species) -->
+                                    <ellipse cx="25" cy="45" rx="8" ry="12" fill="#3F64A9"/>
+                                    <rect x="23" y="50" width="4" height="10" fill="#858E96"/>
+                                    <ellipse cx="45" cy="40" rx="6" ry="10" fill="#1B3A69"/>
+                                    <rect x="43" y="45" width="4" height="15" fill="#858E96"/>
+                                    <ellipse cx="70" cy="48" rx="7" ry="8" fill="#4D7072"/>
+                                    <rect x="68" y="52" width="4" height="8" fill="#858E96"/>
+                                    <!-- Ground/Soil -->
+                                    <rect x="0" y="60" width="100" height="40" fill="#858E96" opacity="0.4"/>
+                                    <!-- Water body -->
+                                    <ellipse cx="75" cy="75" rx="20" ry="8" fill="#3F64A9" opacity="0.6"/>
+                                    <path d="M60 75 Q65 73 70 75 Q75 77 80 75 Q85 73 90 75" stroke="#1B3A69" stroke-width="1" fill="none"/>
+                                    <!-- Animals/Wildlife -->
+                                    <circle cx="15" cy="65" r="2" fill="#E6D590"/> <!-- Small animal -->
+                                    <ellipse cx="35" cy="67" rx="3" ry="2" fill="#1B3A69"/> <!-- Another animal -->
+                                    <circle cx="85" cy="68" r="1.5" fill="#4D7072"/> <!-- Bird/insect -->
+                                    <!-- Plants/Flowers -->
+                                    <circle cx="20" cy="62" r="1.5" fill="#E6D590"/>
+                                    <line x1="20" y1="64" x2="20" y2="68" stroke="#3F64A9" stroke-width="1"/>
+                                    <circle cx="55" cy="63" r="1.5" fill="#E6D590"/>
+                                    <line x1="55" y1="65" x2="55" y2="68" stroke="#3F64A9" stroke-width="1"/>
+                                    <!-- Biodiversity indicators (flying elements) -->
+                                    <path d="M30 25 Q32 23 34 25 Q32 27 30 25" fill="#1B3A69"/> <!-- Bird -->
+                                    <path d="M50 30 Q52 28 54 30 Q52 32 50 30" fill="#4D7072"/> <!-- Bird -->
+                                    <circle cx="65" cy="35" r="1" fill="#E6D590"/> <!-- Insect -->
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Ekosistem & Biodiversitas</h3>
+                            <button class="card-button">Lihat Selengkapnya</button>
+                        </div>
+
+                        <!-- Card 6: Evolusi & Adaptasi -->
+                        <div class="card" data-page="evolusi">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 100 100" class="icon">
+                                    <!-- Evolution and adaptation representation -->
+                                    <defs>
+                                        <marker id="evolutionArrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                                            <polygon points="0 0, 8 3, 0 6" fill="#1B3A69"/>
+                                        </marker>
+                                        <linearGradient id="evolutionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#4D7072;stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:#3F64A9;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#E6D590;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Timeline base -->
+                                    <line x1="10" y1="80" x2="90" y2="20" stroke="url(#evolutionGrad)" stroke-width="3" marker-end="url(#evolutionArrow)"/>
+                                    <!-- Evolutionary stages -->
+                                    <!-- Stage 1: Simple organism -->
+                                    <circle cx="20" cy="75" r="6" fill="#4D7072" stroke="#1B3A69" stroke-width="1.5"/>
+                                    <circle cx="18" cy="73" r="1.5" fill="#858E96"/>
+                                    <!-- Stage 2: More complex -->
+                                    <ellipse cx="35" cy="65" rx="8" ry="6" fill="#3F64A9" stroke="#1B3A69" stroke-width="1.5"/>
+                                    <circle cx="32" cy="63" r="2" fill="#E6D590"/>
+                                    <circle cx="38" cy="67" r="1.5" fill="#858E96"/>
+                                    <path d="M30 65 L25 68" stroke="#1B3A69" stroke-width="1.5" stroke-linecap="round"/>
+                                    <!-- Stage 3: Advanced features -->
+                                    <ellipse cx="55" cy="50" rx="10" ry="8" fill="#E6D590" stroke="#1B3A69" stroke-width="1.5"/>
+                                    <circle cx="52" cy="47" r="2.5" fill="#3F64A9"/>
+                                    <circle cx="58" cy="53" r="2" fill="#4D7072"/>
+                                    <path d="M50 50 L45 53" stroke="#1B3A69" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M60 50 L65 53" stroke="#1B3A69" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M55 42 Q58 40 61 42" stroke="#1B3A69" stroke-width="1.5" fill="none"/>
+                                    <!-- Stage 4: Highly adapted -->
+                                    <ellipse cx="75" cy="35" rx="12" ry="10" fill="#3F64A9" stroke="#1B3A69" stroke-width="2"/>
+                                    <circle cx="72" cy="32" r="3" fill="#E6D590"/>
+                                    <circle cx="78" cy="38" r="2.5" fill="#4D7072"/>
+                                    <path d="M70 35 L63 38" stroke="#1B3A69" stroke-width="2.5" stroke-linecap="round"/>
+                                    <path d="M80 35 L87 38" stroke="#1B3A69" stroke-width="2.5" stroke-linecap="round"/>
+                                    <path d="M75 25 Q78 22 82 25" stroke="#1B3A69" stroke-width="2" fill="none"/>
+                                    <path d="M68 32 Q70 28 72 32" stroke="#858E96" stroke-width="1.5" fill="none"/>
+                                    <path d="M78 38 Q80 42 82 38" stroke="#858E96" stroke-width="1.5" fill="none"/>
+                                    <!-- Adaptation indicators (environmental pressures) -->
+                                    <path d="M15 85 Q20 82 25 85" stroke="#858E96" stroke-width="1" fill="none" opacity="0.7"/>
+                                    <path d="M30 70 Q35 67 40 70" stroke="#858E96" stroke-width="1" fill="none" opacity="0.7"/>
+                                    <path d="M50 55 Q55 52 60 55" stroke="#858E96" stroke-width="1" fill="none" opacity="0.7"/>
+                                    <path d="M70 40 Q75 37 80 40" stroke="#858E96" stroke-width="1" fill="none" opacity="0.7"/>
+                                    <!-- Time markers -->
+                                    <text x="15" y="90" font-family="Arial" font-size="6" fill="#1B3A69">T1</text>
+                                    <text x="30" y="80" font-family="Arial" font-size="6" fill="#1B3A69">T2</text>
+                                    <text x="50" y="65" font-family="Arial" font-size="6" fill="#1B3A69">T3</text>
+                                    <text x="70" y="50" font-family="Arial" font-size="6" fill="#1B3A69">T4</text>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Evolusi & Adaptasi</h3>
+                            <button class="card-button">Lihat Selengkapnya</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dot Pagination -->
+                <div class="pagination-dots" id="paginationDots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                    <span class="dot" data-slide="5"></span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

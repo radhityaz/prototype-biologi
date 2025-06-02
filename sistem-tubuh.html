@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Tubuh - Biologi × Teknik Industri</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="detail-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="detail-nav">
+            <button class="back-button" onclick="goBack()">
+                <svg viewBox="0 0 24 24" class="back-icon">
+                    <path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Kembali
+            </button>
+            <h1 class="detail-title">🫀 SISTEM TUBUH 🫀</h1>
+        </nav>
+
+        <main class="detail-main">
+            <div class="hero-section">
+                <div class="hero-icon">
+                    <svg viewBox="0 0 100 100" class="large-icon">
+                        <defs>
+                            <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3F64A9;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#1B3A69;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="20" r="12" fill="url(#bodyGrad)" stroke="#1B3A69" stroke-width="1.5"/>
+                        <path d="M45 18 Q50 15 55 18 Q50 22 45 18" fill="#E6D590" opacity="0.8"/>
+                        <ellipse cx="50" cy="50" rx="18" ry="25" fill="rgba(63, 100, 169, 0.2)" stroke="#3F64A9" stroke-width="2"/>
+                        <path d="M42 40 Q40 35 45 38 Q50 35 55 38 Q60 35 58 40 Q50 50 42 40" fill="#E6D590" stroke="#1B3A69" stroke-width="1"/>
+                        <ellipse cx="40" cy="45" rx="6" ry="8" fill="#4D7072" opacity="0.7"/>
+                        <ellipse cx="60" cy="45" rx="6" ry="8" fill="#4D7072" opacity="0.7"/>
+                        <path d="M45 55 Q50 60 55 55 Q52 65 48 65 Q45 60 45 55" fill="#858E96" opacity="0.6"/>
+                        <path d="M50 32 L50 40" stroke="#E6D590" stroke-width="2"/>
+                        <path d="M50 50 Q45 55 40 60" stroke="#E6D590" stroke-width="1.5"/>
+                        <path d="M50 50 Q55 55 60 60" stroke="#E6D590" stroke-width="1.5"/>
+                        <path d="M50 65 L50 75" stroke="#E6D590" stroke-width="2"/>
+                        <line x1="32" y1="45" x2="20" y2="55" stroke="#3F64A9" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="68" y1="45" x2="80" y2="55" stroke="#3F64A9" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="42" y1="75" x2="38" y2="90" stroke="#3F64A9" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="58" y1="75" x2="62" y2="90" stroke="#3F64A9" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h2 class="hero-title">Sistem Tubuh dalam Teknik Industri</h2>
+                <p class="hero-description">Menerapkan prinsip koordinasi sistem tubuh untuk optimasi sistem industri yang terintegrasi</p>
+            </div>
+
+            <section class="content-section">
+                <div class="section-card">
+                    <h3 class="section-title">❤️ Sistem Kardiovaskular sebagai Model Distribusi</h3>
+                    <p>Sistem peredaran darah menginspirasi desain jaringan distribusi dan logistik industri.</p>
+                    <ul>
+                        <li>Jaringan pipa distribusi fluida</li>
+                        <li>Sistem pompa bertingkat</li>
+                        <li>Optimasi aliran material</li>
+                    </ul>
+                </div>
+
+                <div class="section-card">
+                    <h3 class="section-title">🫁 Sistem Respirasi untuk Pertukaran Gas</h3>
+                    <p>Mekanisme pertukaran gas di paru-paru diterapkan dalam teknologi separasi industri.</p>
+                    <ul>
+                        <li>Desain heat exchanger</li>
+                        <li>Sistem ventilasi pabrik</li>
+                        <li>Teknologi membran separasi</li>
+                    </ul>
+                </div>
+
+                <div class="section-card">
+                    <h3 class="section-title">🧠 Sistem Saraf sebagai Kontrol Otomatis</h3>
+                    <p>Jaringan saraf menginspirasi pengembangan sistem kontrol dan automasi industri.</p>
+                    <ul>
+                        <li>Sistem kontrol terdistribusi</li>
+                        <li>Neural network untuk optimasi</li>
+                        <li>Sensor network terintegrasi</li>
+                    </ul>
+                </div>
+
+                <div class="section-card">
+                    <h3 class="section-title">🍽️ Sistem Pencernaan untuk Proses Bertahap</h3>
+                    <p>Proses pencernaan menjadi model untuk sistem pemrosesan material bertahap.</p>
+                    <ul>
+                        <li>Proses manufaktur bertahap</li>
+                        <li>Sistem pemurnian material</li>
+                        <li>Optimasi waktu proses</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="relevance-section">
+                <h2 class="section-header">🏭 Sistem Tubuh sebagai Model Industri</h2>
+                <div class="relevance-grid">
+                    <div class="relevance-item">
+                        <h4>🔄 Sistem Sirkulasi</h4>
+                        <p>Model untuk jaringan distribusi material dan energi dalam kompleks industri.</p>
+                    </div>
+                    <div class="relevance-item">
+                        <h4>🧠 Sistem Kontrol</h4>
+                        <p>Inspirasi untuk sistem automasi dan kontrol proses yang responsif dan adaptif.</p>
+                    </div>
+                    <div class="relevance-item">
+                        <h4>⚖️ Homeostasis</h4>
+                        <p>Prinsip keseimbangan untuk menjaga stabilitas operasi sistem industri.</p>
+                    </div>
+                    <div class="relevance-item">
+                        <h4>🔧 Sistem Maintenance</h4>
+                        <p>Model sistem kekebalan untuk predictive maintenance dan self-healing systems.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="application-section">
+                <h2 class="section-header">🚀 Aplikasi Praktis</h2>
+                <div class="application-grid">
+                    <div class="application-item">
+                        <h4>🏭 Smart Manufacturing</h4>
+                        <p>Sistem manufaktur pintar yang meniru koordinasi antar sistem tubuh untuk efisiensi optimal.</p>
+                    </div>
+                    <div class="application-item">
+                        <h4>🌐 Supply Chain</h4>
+                        <p>Jaringan rantai pasok yang terinspirasi dari sistem peredaran darah untuk distribusi efisien.</p>
+                    </div>
+                    <div class="application-item">
+                        <h4>🤖 Robotics</h4>
+                        <p>Desain robot industri yang meniru sistem motorik dan sensorik manusia.</p>
+                    </div>
+                    <div class="application-item">
+                        <h4>📊 Process Control</h4>
+                        <p>Sistem kontrol proses yang meniru sistem saraf untuk respons cepat dan akurat.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="integration-section">
+                <h2 class="section-header">🔗 Integrasi Sistem</h2>
+                <div class="section-card">
+                    <h3 class="section-title">🎯 Koordinasi Multi-Sistem</h3>
+                    <p>Tubuh manusia menunjukkan bagaimana berbagai sistem dapat bekerja secara harmonis:</p>
+                    <div class="integration-grid">
+                        <div class="integration-item">
+                            <strong>Sinkronisasi:</strong> Koordinasi waktu antar proses untuk efisiensi maksimal
+                        </div>
+                        <div class="integration-item">
+                            <strong>Redundansi:</strong> Sistem backup untuk menjamin kontinuitas operasi
+                        </div>
+                        <div class="integration-item">
+                            <strong>Adaptabilitas:</strong> Kemampuan menyesuaikan dengan kondisi operasi yang berubah
+                        </div>
+                        <div class="integration-item">
+                            <strong>Efisiensi Energi:</strong> Optimasi penggunaan energi untuk performa optimal
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="detail-page.js"></script>
+</body>
+</html>

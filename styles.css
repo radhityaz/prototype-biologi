@@ -1,0 +1,459 @@
+/* CSS Custom Properties for Color Palette */
+:root {
+    /* Primary Colors */
+    --dark-blue: #1B3A69;
+    --yellow: #E6D590;
+    --blue: #3F64A9;
+    --moss: #4D7072;
+    
+    /* Neutral Colors */
+    --dark-gray: #858E96;
+    --light-gray: #F1F3F5;
+    --off-white: #FFFBF7;
+    --black: #212529;
+    
+    /* Gradients */
+    --dark-blue-gradient: linear-gradient(135deg, #1B3A69, #2A4A7A);
+    --moss-gradient: linear-gradient(135deg, #4D7072, #5D8082);
+    --yellow-gradient: linear-gradient(135deg, #E6D590, #F0E5A0);
+    --light-blue-gradient: linear-gradient(135deg, #3F64A9, #4F74B9);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--off-white);
+    color: var(--dark-blue);
+    line-height: 1.6;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-title {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+    background: var(--dark-blue-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    color: var(--dark-gray);
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.big-heading {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.blink-text {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    color: var(--dark-gray);
+    margin-bottom: 2rem;
+    animation: blink 2s infinite;
+    font-weight: 500;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0.3; }
+}
+
+/* Carousel Section */
+.carousel-section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    gap: 1rem;
+    padding: 1rem 0;
+    width: fit-content;
+}
+
+/* Card Styles */
+.card {
+    flex: 0 0 300px;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(27, 58, 105, 0.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(27, 58, 105, 0.2);
+    border-color: var(--blue);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-gray);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-icon {
+    background: var(--yellow);
+    transform: scale(1.1);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.card-button {
+    background: var(--yellow);
+    color: var(--black);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    margin-top: auto;
+}
+
+.card-button:hover {
+    background: var(--dark-blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Pagination Dots */
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--light-gray);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: var(--blue);
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background: var(--moss);
+}
+
+/* Page Transition */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--dark-blue);
+    z-index: 9999;
+    transform: translateX(-100%);
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.page-transition.active {
+    transform: translateX(0);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .header {
+        padding: 1.5rem 0 0.5rem;
+    }
+    
+    .card {
+        flex: 0 0 250px;
+        padding: 1.2rem;
+    }
+    
+    .carousel-track {
+        padding: 0.5rem;
+        gap: 0.8rem;
+    }
+    
+    .card-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 0 0 220px;
+        padding: 1rem;
+    }
+    
+    .carousel-track {
+        padding: 0.5rem 0.25rem;
+        gap: 0.6rem;
+    }
+    
+    .card-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .card-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Smooth scrolling for carousel */
+.carousel-container {
+    scroll-behavior: smooth;
+}
+
+/* Loading animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .blink-text {
+        animation: none;
+    }
+}
+
+/* Focus styles for accessibility */
+.card:focus,
+.card-button:focus,
+.dot:focus {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .card {
+        border: 2px solid var(--dark-blue);
+    }
+    
+    .card-button {
+        border: 2px solid var(--black);
+    }
+}
+
+/* Simple, clean animations */
+@keyframes gentle-pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Simple sparkle effect */
+.simple-sparkle {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: simple-fade 2s ease-out forwards;
+}
+
+@keyframes simple-fade {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+/* Clean card hover effects */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Simple loading animation */
+@keyframes simple-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Clean icon effects */
+.card-icon {
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-icon {
+    transform: scale(1.05);
+}
+
+/* Simple page transition */
+.page-transition {
+    background: var(--off-white);
+    transition: all 0.3s ease;
+}
+
+/* Ultra responsive mega animations */
+@media (max-width: 768px) {
+    .card:hover {
+        transform: translateY(-5px) scale(1.01);
+    }
+    
+    /* TajMahal float animation removed for clean interface */
+}
